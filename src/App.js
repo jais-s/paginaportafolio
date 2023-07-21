@@ -4,13 +4,17 @@ import NavBar from './NavBar.jsx';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Education from './Pages/Education';
+import Summary from './Pages/summary';
 
 function App() {
   let component
   console.log(window.location.pathname);
   switch (window.location.pathname) {
     case "/":
-      component = <About />
+      component = <Summary />
+      break;
+    case "/paginaportafolio":
+      component = <Summary />
       break;
     case "/Contact":
       component = <Contact />
